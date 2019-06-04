@@ -1,0 +1,67 @@
+<mvc:View controllerName="com.ciber.CardsTest.controller.View1" 
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" 
+	xmlns="sap.m"
+	xmlns:f="sap.f"
+	xmlns:w="sap.ui.integration.widgets"
+	xmlns:core="sap.ui.core">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<f:GridContainer class="sapUiSmallMargin">
+							<w:Card manifest="{manifests>/ListDefaultHeader}" action="onAction">
+								<w:layoutData>
+										<f:GridContainerItemLayoutData rows="3" columns="4" />
+								</w:layoutData>
+							</w:Card>
+							
+							<w:Card manifest="{manifests>/AnalyticalCard}">
+							<w:layoutData>
+										<f:GridContainerItemLayoutData rows="3" columns="4" />
+								</w:layoutData>
+							</w:Card>
+							
+							<w:Card manifest="{manifests>/LineComplex}">
+							<w:layoutData>
+										<f:GridContainerItemLayoutData rows="4" columns="5" />
+								</w:layoutData>
+							</w:Card>
+							
+							<w:Card manifest="{manifests>/StackedColumn}">
+							<w:layoutData>
+										<f:GridContainerItemLayoutData rows="5" columns="4" />
+								</w:layoutData>
+							</w:Card>
+							
+							<w:Card manifest="{manifests>/StackedBar}">
+							<w:layoutData>
+										<f:GridContainerItemLayoutData rows="4" columns="4" />
+								</w:layoutData>
+							</w:Card>
+							
+							<w:Card manifest="{manifests>/ListNumericHeader}">
+							<w:layoutData>
+										<f:GridContainerItemLayoutData rows="2" columns="5" />
+								</w:layoutData>
+							</w:Card>
+							
+							<w:Card manifest="{manifests>/donut1}">
+							<w:layoutData>
+										<f:GridContainerItemLayoutData rows="3" columns="3" />
+								</w:layoutData>
+							</w:Card>
+							
+							<w:Card manifest="{manifests>/donut2}">
+							<w:layoutData>
+										<f:GridContainerItemLayoutData rows="3" columns="2" />
+								</w:layoutData>
+							</w:Card>
+							
+						</f:GridContainer>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
